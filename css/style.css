@@ -1,0 +1,250 @@
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+}
+
+/* header */
+
+.menu{
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.titulo-header{
+    text-decoration: none;
+    color: rgb(145, 154, 169,1);
+    font-family: "Karantina", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    align-self: center;
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(145, 154, 169,1);
+}
+
+
+
+/* main */
+main{
+    height: 70vh;
+}
+
+.home-principal{
+    height: 100%;
+    font-family: "Karantina", system-ui;
+    background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #813535;
+}
+
+.home-titulo{
+    font-size: 150px;
+    text-align: center;
+}
+
+.home-subtitulo{
+    font-size: 120px;
+    text-align: center;
+}
+
+.h1-home-principal{
+    width: 50%;
+}
+
+.pie-pagina{
+    height: 15vh;
+    background-color: rgba(61, 0, 0, 1) ;
+    display: flex;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.box{
+    
+   color:  rgb(145, 154, 169,1);
+   font-size: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.box2{
+    
+   color: rgb(145, 154, 169,1);
+   font-size: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.img-iconos{
+    width: 15px;
+
+
+}
+
+
+/* servicios */
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-img{
+    width:100%;
+    object-fit: cover;
+    height: 100px;
+}
+
+.servicio-container{
+    width: 80%;
+    background-color: black;
+    border-radius: 25px;
+    height: 20vh;
+}
+
+.margin-servicio-container{
+    margin-bottom: 35px;
+}
+
+.servicio-container h2{
+    text-align: center;
+    color: #813535;
+    
+}
+
+.servicio-container-principal{
+    display: flex;
+    justify-content: center;
+
+}
+
+.home-servicios{
+    height: 100%;
+    font-family: "Karantina", system-ui;
+    background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tatuajes{
+    width: 30%;
+}
+
+.h1-titulos{
+    font-family: "Karantina", system-ui;
+    color: #813535;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/* portafolio */
+
+.home-portafolio{
+    height: 100%;
+    font-family: "Karantina", system-ui;
+    background-image: url("../assets/img/img-portafolio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-portafolio1{
+    margin-top: 70px ;
+    display: flex;
+}
+
+.container-portafolio{
+    display: flex;
+}
+
+/* agenda */
+
+.home-agenda{
+    height: 100%;
+    width: 100%;
+    font-family: "Karantina", system-ui;
+    background-image: url("../assets/img/camilla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+
+}
+
+.contenedor-formulario{
+  justify-content: center;
+  
+}
+
+.formulario{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    align-items: center;
+   justify-content: flex-end;
+    margin: 0;
+
+}
+
+.indicaciones{
+    font-family: "Karantina", system-ui;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* contacto */
+
+.home-contacto{
+    height: 100%;
+    width: 100%;
+    font-family: "Karantina", system-ui;
+    background-image: url("../assets/img/img-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-contacto{
+    color:#813535;
+    text-align: center;
+    margin-top: 100px;
+}
