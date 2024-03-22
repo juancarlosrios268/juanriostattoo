@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUANRIOSTATTOO</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <div class="menu">
-            <img src="../assets/img/_aa05b1d5-3af3-4e98-ab91-c8e324ca1ac7.jpg" alt="">
+            <img src="../assets/img/_aa05b1d5-3af3-4e98-ab91-c8e324ca1ac7.jpg" alt="logotipo">
             <p class="titulo-header">JUANRIOSTATTOO</p>
             <nav>
-                <ul>
+                <ul class="navBar">
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="./servicios.html">SERVICIOS</a></li>
                     <li><a href="./portafolio.html">PORTAFOLIO</a></li>
@@ -23,47 +24,46 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="home-agenda">
-            <h1 class="h1-titulos"> AGENDA TÚ CITA</h1>
-            <div class="contenedor-formulario">
+    <main class="w-100 bg-black pt-5 ">
+        <!-- impelentacion boostrap-->
+        <div class="form-floating w-50 mb-3 container-md">
+            <input type="name" class="form-control" id="floatingInput" placeholder="ingresa nombre">
+            <label for="floatingInput">NOMBRE</label>
+          </div>
+          <div class="form-floating w-50 mb-3 container-md">
+            <input type="email" class="form-control" id="floatingPassword" placeholder="email">
+            <label for="floatingPassword">CORREO</label>
+          </div>
+          <div class="form-floating w-50 mb-3 container-md">
+            <input type="date" class="form-control" id="floatingFecha" placeholder="fecha">
+            <label for="floatingFecha">RESERVA</label>
+          </div>
+          <div class="form-floating w-50 mb-3 container-md">
+            <input type="text" class="form-control" id="floatingText" placeholder="Descriopción tatuaje">
+            <label for="floatingText">DESCRIBE EL TATUAJE QUE TE QUIERES REALIZAR</label>
+          </div>
+          <div class="form-floating ">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
 
-                <form class="formulario">
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" id="nombre" required placeholder="ingresa tú nombre">
-                    <label for="apellidos">APELLIDOS</label>
-                    <input type="text" id="apellidos" required placeholder="ingresa tús apellidos">
-                    <label for="email">EMAIL</label>
-                    <input type="text" id="email" required placeholder="ingresa email">
-                    <label for="fecha">FECHA RESERVA</label>
-                    <input type="date"  id="fecha" >
-                    <input type="submit"> 
-                </form>
-            </div>
-            <section class="indicaciones">
-                <p>RESERVA DE TATUAJE</p>
-                <p>.DEJANOS TUS DATOS PARA PONERNOS EN CONTACTO</p>
-                <p>RECUERDA TENER MUY CLARO EL LUGAR Y EL TAMAÑO DONDE TE VAS A REALIZAR EL TATUAJE </p>
-                <p>.PARA SEPARAR TÚ CITA DEBER ADELANTAR UN ABONO DEL 20% DEL VALOR TOTAL DEL TATUAJE</p>
-                <p>¡MUCHAS GRACIAS POR CONFIAR EN NUESTRO TRABAJO!</p>
-            </section>
-        </div>
     </main>
     <footer class="pie-pagina">
-        <img src="../assets/img/_aa05b1d5-3af3-4e98-ab91-c8e324ca1ac7.jpg" alt="">
+        <img src="./assets/img/_aa05b1d5-3af3-4e98-ab91-c8e324ca1ac7.jpg" alt="">
         <div class="footer-container">
             <div class="box">
-                <h2> <span><img class="img-iconos" src="../assets/img/icono-instagram.jpg" alt=""></span>@JUANRIOSTATTOO</h2>
-                <h2><span><img class="img-iconos" src="../assets/img/icono-wpp.jpg" alt=""></span> 3052345067</h2>
-                <h2><span><img class="img-iconos" src="../assets/img/icono-fb.jpg" alt=""></span> JUAN RIOS TATTOO</h2>
-                <h2><span><img class="img-iconos" src="../assets/img/icono-tik.jpg" alt=""></span>@JUANRIOSTATOO</h2>
+                <a href="https://www.instagram.com/juanriostattoo/" target="_blank"><h2><span><img class="img-iconos" src="../assets/img/icono-instagram.jpg" alt="icono instagram"></span>@JUANRIOSTATTOO</h2> </a>
+                <a href="https://web.whatsapp.com/" target="_blank"> <h2><span><img class="img-iconos" src="../assets/img/icono-wpp.jpg" alt="numero telefono"></span> 3052345067</h2></a>
+                <a href="https://www.facebook.com/" target="_blank"> <h2><span><img class="img-iconos" src="../assets/img/icono-fb.jpg" alt="icono fb"></span> JUAN RIOS TATTOO</h2> </a>
+                <a href="https://www.tiktok.com/@juanriostattoo" target="_blank"><h2><span><img class="img-iconos" src="../assets/img/icono-tik.jpg" alt="icono tik tok"></span>@JUANRIOSTATOO</h2> </a>
             </div>
             <div class="box2">
-                <h2> <span><img class="img-iconos" src="../assets/img/icono-correo.jpg" alt=""></span>JUANCARLOSRIOSR@GMAIL.COM</h2>
-                <br>CRA 28A #35-70 <br>MEDELLIN-COLOMBIA</br></H2>
+                <a href="https://gmail.com" target="_blank"><h2> <span><img class="img-iconos" src="../assets/img/icono-correo.jpg" alt="icono correo"></span>JUANCARLOSRIOSR@GMAIL.COM</h2>
+                <br>CRA 28A #35-70 <br>MEDELLIN-COLOMBIA</br></h2></a>
             </div>
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
