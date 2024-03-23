@@ -78,15 +78,27 @@ a{
     .navBar{
      display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items:flex-start;
     }
+    .titulo-header{
+            width: 1%;
+            font-size: 1px;
+        }
+
 }
 
 @media (max-width: 320px){
-    
+    .titulo-header{
+        width: 1%;
+        font-size: 1px;
+    }
+    .navBar{
+        width:99%;
+        align-items:center;
+    }
 }
 
-
+/* home con responsive*/
 /* main */
 main{
     height: 70vh;
@@ -124,6 +136,48 @@ main{
 .h1-home-principal{
     width: 100%;
 }
+    @media (max-width: 768px){
+        .home-titulo{
+            font-size: 80px;
+            text-align:center ;
+        }
+        .home-subtitulo{
+            font-size: 80px;
+            text-align: center;
+        }
+        .home-texto{
+            text-align: center;
+        }
+    }
+    @media (max-width: 425px){
+        .home-titulo{
+        font-size: 50px;
+        text-align: center;
+        margin-left: 20px;
+        }
+        .home-subtitulo{
+            font-size: 50px;
+            text-align: center;
+        }
+        .home-texto{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    @media (max-width: 320px){
+        .home-titulo{
+            text-align: center;
+            margin-left: none;
+            margin-right: 80px;
+            padding-top: 20px;
+        }
+        .home-subtitulo{
+            text-align: center;
+            margin-right: 80px;
+        }   
+    }
+
+/* footer*/
 
 .pie-pagina{
     height: 15vh;
@@ -158,31 +212,44 @@ main{
 
 .img-iconos{
     width: 15px;
+}
+
+.h2Footer{
+    font-size: 20px;
+}
+
+.h2Correo{
+    font-size: 20px;
+}
 
 
-}
-@media (max-width: 1024px){
-}
-@media (max-width: 768px){
-}
 @media (max-width: 425px){
-    .home-titulo{
-    font-size: 50px;
-    text-align: center;
-    margin-left: 20px;
+    .h2Correo{
+        font-size: 6px;
     }
-    .home-subtitulo{
-        font-size: 50px;
-        text-align: center;
+    .img-iconos{
+      width: 5px;
     }
-    .home-texto{
-        font-size: 30px;
-        text-align: center;
+    .h2Footer{
+        font-size: 8px;
     }
 }
-@media (max-width: 320px){
 
+@media (max-width: 320px){
+    .h2Correo{
+        font-size: 5px;
+    }
+    .img-iconos{
+      width: 4px;
+    }
+    .h2Footer{
+        font-size: 6px;
+        padding-top: 6px;
+    }
+    
 }
+
+
 
 
 /* servicios */
@@ -373,7 +440,7 @@ main{
     font-size: 30px;
 }
 
-/* contacto */
+/* contacto con responsive */
 
 .home-contacto{
     height: 100%;
@@ -395,4 +462,34 @@ main{
 .h2Contacto{
     color: black;
     font-size: 40px;
+    padding-top: 20px;
+}
+
+.img-iconos2{
+    width: 20px;
+    padding-right: 10px;
+}
+  
+
+@media (max-width: 425px){
+    
+}
+@media (max-width: 425px){
+    .h2Contacto{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    
+}
+@media (max-width: 375px){
+    .h2Contacto{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 320px){
+    .h2Contacto{
+        font-size: 20px;
+        padding-top: 20px;
+    }
 }
