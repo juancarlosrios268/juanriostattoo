@@ -411,6 +411,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
+  
 
 }
 
@@ -431,6 +432,15 @@ main{
    justify-content: flex-end;
     margin: 0;
 
+}
+
+
+
+.botton{
+ 
+    border-radius: 10px;
+    background-color:#813535;  
+    justify-content: center;
 }
 
 .indicaciones{
