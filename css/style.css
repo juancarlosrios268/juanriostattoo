@@ -6,7 +6,7 @@
     box-sizing: border;
 }
 
-/* header */
+/* header responsive */
 
 .menu{
     background-color: black;
@@ -177,12 +177,13 @@ main{
         }   
     }
 
-/* footer*/
+/* footer responsive*/
 
 .pie-pagina{
-    height: 15vh;
+    height: 150px;
     background-color: rgba(61, 0, 0, 1) ;
     display: flex;
+    position: relative;
 }
 
 .footer-container{
@@ -252,71 +253,7 @@ main{
 
 
 
-/* servicios */
 
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 150px;
-
-}
-
-
-
-.container-img{
-    width:90%;
-    object-fit: contain ;
-    height: 90%;
-    justify-content: center;
-    
-}
-
-.servicio-container{
-    width: 80%;
-    background-color: black;
-    border-radius: 25px;
-    height: 25vh;
-}
-
-.margin-servicio-container{
-    margin-bottom: 35px;
-}
-
-.servicio-container h2{
-    text-align: center;
-    color: #813535;
-    justify-content: center;
-    
-}
-
-.servicio-container-principal{
-    display: flex;
-    justify-content: center;
-   
-
-}
-
-.home-servicios{
-    height: 100%;
-    font-family: "Karantina", system-ui;
-    background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.tatuajes{
-    width: 100px;
-    justify-content:space-between;
-    height: 200px;
-   
-}
-.ilustracion{
-    width: 100px;
-    justify-content:center;
-    height: 200px;
-}
 .h1-titulos{
     font-family: "Karantina", system-ui;
     color: #813535;
@@ -325,17 +262,79 @@ main{
 }
 
 
-/* portafolio */
+/* TATUAJES  responsive*/
+
+.main_tatuajes{
+    background-color: rgb(180, 175, 175);
+    height: 800px;
+    width: 100%;
+}
+
+.container_tatuajes{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+    background: linear-gradient(black, gray, rgb(180, 175, 175) );
+   
+    
+}
+
+.img_tatuajes{
+    width: 15%;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
 
 
+.h2_tattoo{
+    font-family: "Karantina", system-ui;
+    color: #813535;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.p_tattoo{
+    font-family: "Karantina", system-ui;
+    color: #813535;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+@media (max-width: 375px){
+    .container_tatuajes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* ILUSTRACIONES */
 .mainServicio{
     background-color: black;
+    width: 100%;
+    height: 800px;
+}
+
+.h2_ilustraciones{
+    font-family: "Karantina", system-ui;
+    color: #813535;
+    text-align: center;
+    font-size: 60px;
 }
 
 .portafolioContainer{
     display: grid;
     width: 50%;
-    height: 100%;
+    height: 90%;
     margin: auto;
     gap: 10px;
     padding-top: 50px;
@@ -401,7 +400,8 @@ main{
 }
 
 
-/* agenda */
+
+/* agenda  con responsive*/
 
 .home-agenda{
     height: 100%;
@@ -415,40 +415,56 @@ main{
 
 }
 
-.contenedor-formulario{
-  justify-content: center;
-  
+.conten_form{
+    background-color: black;
+    align-content: center;
+    
 }
+
 
 .formulario{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    border-radius: 25px;
-    color: white;
-    align-items: center;
-   justify-content: flex-end;
-    margin: 0;
+  flex-direction: column;  
+  display: flex;  
+  width: 50%;
+  padding: 30px; 
+  background-color: #813535; 
+  margin: auto;
+  font-family: "Karantina", system-ui;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
 
-}
-
-
-
-.botton{
  
-    border-radius: 10px;
-    background-color:#813535;  
-    justify-content: center;
 }
 
-.indicaciones{
-    font-family: "Karantina", system-ui;
-    color: white;
-    text-align: center;
-    font-size: 30px;
+.form_casilla{
+  width: 90%;  
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+   
 }
+@media (max-width: 425px){
+    h2{
+        font-size: 25px;
+        
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px){
+    h2{
+        font-size: 20px;
+        
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+
 
 /* contacto con responsive */
 
@@ -464,7 +480,7 @@ main{
 .box-contacto{
     color:#813535;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
     width: 100%;
     height: 300px;
 }
@@ -472,7 +488,7 @@ main{
 .h2Contacto{
     color: black;
     font-size: 40px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .img-iconos2{
@@ -481,7 +497,11 @@ main{
 }
   
 
-@media (max-width: 425px){
+@media (max-width: 768px){
+    .h2Contacto{
+        font-size: 35px;
+        padding-top: 20px;
+    }
     
 }
 @media (max-width: 425px){

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUANRIOSTATTOO</title>
+    <title>FORMULARIO</title>
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -16,39 +15,26 @@
             <nav>
                 <ul class="navBar">
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="./servicios.html">SERVICIOS</a></li>
-                    <li><a href="./portafolio.html">PORTAFOLIO</a></li>
+                    <li><a href="./servicios.html">TATUAJES</a></li>
+                    <li><a href="./portafolio.html">ILUSTRACIONES</a></li>
                     <li><a href="#">AGENDA CITA</a></li>
                     <li><a href="./contacto.html">CONTÁCTAME</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="w-100 bg-black pt-5 ">
-        <!-- impelentacion boostrap-->
-        <div class="form-floating w-50 mb-3 container-md">
-            <input type="name" class="form-control" id="floatingInput" placeholder="ingresa nombre">
-            <label for="floatingInput">NOMBRE</label>
-          </div>
-          <div class="form-floating w-50 mb-3 container-md">
-            <input type="email" class="form-control" id="floatingPassword" placeholder="email">
-            <label for="floatingPassword">CORREO</label>
-          </div>
-          <div class="form-floating w-50 mb-3 container-md">
-            <input type="date" class="form-control" id="floatingFecha" placeholder="fecha">
-            <label for="floatingFecha">RESERVA</label>
-          </div>
-          <div class="form-floating w-50 mb-3 container-md">
-            <input type="text" class="form-control" id="floatingText" placeholder="Descriopción tatuaje">
-            <label for="floatingText">DESCRIBE EL TATUAJE QUE TE QUIERES REALIZAR</label>
-          </div>
-          <div class="row  align-items-center ">
-           <button class="botton w-25 " type="submit">Enviar</button>
-          </div>
-
+    <main class="conten_form">
+        <section class="formulario">
+            <h2>AGENDA TÚ CITA</h2>
+            <p>En este formulario podras agendar tu cita, especificando el diseño y el tamaño de el tatuaje a cotizar</p>
+            <input class="form_casilla" type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre">
+            <input class="form_casilla" type="email" name="email" id="email" placeholder="ingresa tu email">
+            <input class="form_casilla" type="date" name="date" id="date">
+            <input class="form_casilla" type="text" name="informacion" id="informacion" placeholder="ingresa la descripción del tatuaje que vas a cotizar">
+            <input class="form_casilla" type="submit" value="Enviar">
+        </section>
     </main>
     <footer class="pie-pagina">
-        <img src="./assets/img/_aa05b1d5-3af3-4e98-ab91-c8e324ca1ac7.jpg" alt="">
         <div class="footer-container">
             <div class="box">
                 <a href="https://www.instagram.com/juanriostattoo/" target="_blank"><h2 class="h2Footer"><span><img class="img-iconos" src="../assets/img/icono-instagram.jpg" alt="icono instagram"></span>@JUANRIOSTATTOO</h2> </a>
@@ -63,7 +49,5 @@
 
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
