@@ -1,0 +1,42 @@
+.main_tatuajes{
+    background-color: rgb(180, 175, 175);
+    height: 800px;
+    width: 100%;
+}
+
+.container_tatuajes{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+    background: linear-gradient(black, gray, rgb(180, 175, 175) );
+   
+    
+}
+
+.img_tatuajes{
+    width: 15%;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+
+
+.h2_tattoo{
+    font-family: "Karantina", system-ui;
+    color: #813535;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.p_tattoo{
+    font-family: "Karantina", system-ui;
+    color: #813535;
+    text-align: center;
+    font-size: 30px;
+
+}

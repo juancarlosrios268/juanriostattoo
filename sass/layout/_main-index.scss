@@ -1,0 +1,33 @@
+.home-principal{
+    height: 800px;
+    font-family: "Karantina", system-ui;
+    background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #813535;
+    
+}
+
+.home-titulo{
+    font-size: 150px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.home-subtitulo{
+    font-size: 120px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.home-texto{
+    color: white;
+    text-align: right;
+    font-size: 35px;
+    margin-right: 80px;
+    justify-items: center;
+}
+
+.h1-home-principal{
+    width: 100%;
+}

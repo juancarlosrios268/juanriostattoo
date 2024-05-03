@@ -1,525 +1,372 @@
-
 * {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit; }
 
-    padding: 0;
-    margin: 0;
-    box-sizing: border;
-}
+.menu {
+  background-color: black;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between; }
 
-/* header responsive */
+.titulo-header {
+  text-decoration: none;
+  font-family: "Karantina", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  align-self: center;
+  width: 30%;
+  text-align: center;
+  font-size: 30px;
+  color: #919aa9; }
 
-.menu{
-    background-color: black;
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-}
+.navBar li a:hover {
+  color: red; }
 
-
-
-.titulo-header{
-    text-decoration: none;
-    color: rgb(145, 154, 169,1);
-    font-family: "Karantina", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    align-self: center;
-    width: 30%;
-    text-align: center;
-    font-size: 30px;
-}
-
-
-
-
-/* pseudoclase hover*/
-.navBar li a:hover{
-    color:red; 
-    
-}
 nav {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 70%;
-}
-
-ul{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(145, 154, 169,1);
-}
-@media (max-width: 1024px){
-    .navBar{
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 768px){
-   .titulo-header{
-    font-weight: 300px;
-    font-size: 20px;
-    width: 20%;
-   }
-
-   .navBar{
-    font-size: 10px;
-    width: 80%;
-   }
-}
-
-@media (max-width: 425px){
-    .navBar{
-     display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    }
-    .titulo-header{
-            width: 1%;
-            font-size: 1px;
-        }
-
-}
-
-@media (max-width: 320px){
-    .titulo-header{
-        width: 1%;
-        font-size: 1px;
-    }
-    .navBar{
-        width:99%;
-        align-items:center;
-    }
-}
-
-/* home con responsive*/
-/* main */
-main{
-    height: 70vh;
-}
-
-.home-principal{
-    height: 100%;
-    font-family: "Karantina", system-ui;
-    background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #813535;
-}
-
-.home-titulo{
-    font-size: 150px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.home-subtitulo{
-    font-size: 120px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.home-texto{
-    color: white;
-    text-align: right;
-    font-size: 35px;
-    margin-right: 80px;
-    justify-items: center;
-}
-
-.h1-home-principal{
-    width: 100%;
-}
-    @media (max-width: 768px){
-        .home-titulo{
-            font-size: 80px;
-            text-align:center ;
-        }
-        .home-subtitulo{
-            font-size: 80px;
-            text-align: center;
-        }
-        .home-texto{
-            text-align: center;
-        }
-    }
-    @media (max-width: 425px){
-        .home-titulo{
-        font-size: 50px;
-        text-align: center;
-        margin-left: 20px;
-        }
-        .home-subtitulo{
-            font-size: 50px;
-            text-align: center;
-        }
-        .home-texto{
-            font-size: 30px;
-            text-align: center;
-        }
-    }
-    @media (max-width: 320px){
-        .home-titulo{
-            text-align: center;
-            margin-left: none;
-            margin-right: 80px;
-            padding-top: 20px;
-        }
-        .home-subtitulo{
-            text-align: center;
-            margin-right: 80px;
-        }   
-    }
-
-/* footer responsive*/
-
-.pie-pagina{
-    height: 150px;
-    background-color: rgba(61, 0, 0, 1) ;
-    display: flex;
-    position: relative;
-}
-
-.footer-container{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    
-}
-
-.box{
-    
-   color:  rgb(145, 154, 169,1);
-   font-size: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-
-.box2{
-    
-   color: rgb(145, 154, 169,1);
-   font-size: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-
-.img-iconos{
-    width: 20px;
-}
-
-.h2Footer{
-    font-size: 20px;
-}
-
-.h2Correo{
-    font-size: 20px;
-}
-
-
-@media (max-width: 425px){
-    .h2Correo{
-        font-size: 6px;
-    }
-    .img-iconos{
-      width: 5px;
-    }
-    .h2Footer{
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 320px){
-    .h2Correo{
-        font-size: 5px;
-    }
-    .img-iconos{
-      width: 4px;
-    }
-    .h2Footer{
-        font-size: 6px;
-        padding-top: 6px;
-    }
-    
-}
-
-
-
-
-
-.h1-titulos{
-    font-family: "Karantina", system-ui;
-    color: #813535;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-/* TATUAJES  responsive*/
-
-.main_tatuajes{
-    background-color: rgb(180, 175, 175);
-    height: 800px;
-    width: 100%;
-}
-
-.container_tatuajes{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    
-    background: linear-gradient(black, gray, rgb(180, 175, 175) );
-   
-    
-}
-
-.img_tatuajes{
-    width: 15%;
-    margin: 10px;
-    border-radius: 20px;
-    
-}
-
-
-.h2_tattoo{
-    font-family: "Karantina", system-ui;
-    color: #813535;
-    text-align: center;
-    font-size: 60px;
-
-}
-
-.p_tattoo{
-    font-family: "Karantina", system-ui;
-    color: #813535;
-    text-align: center;
-    font-size: 30px;
-
-}
-
-@media (max-width: 375px){
-    .container_tatuajes{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-
-/* ILUSTRACIONES */
-.mainServicio{
-    background-color: black;
-    width: 100%;
-    height: 800px;
-}
-
-.h2_ilustraciones{
-    font-family: "Karantina", system-ui;
-    color: #813535;
-    text-align: center;
-    font-size: 60px;
-}
-
-.portafolioContainer{
-    display: grid;
-    width: 50%;
-    height: 90%;
-    margin: auto;
-    gap: 10px;
-    padding-top: 50px;
-    background-color:black;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "img1 img1 img2 img2 img3 img3 img4 img4"
-    "img1 img1 img2 img2 img3 img3 img4 img4"
-    "img5 img5 img6 img6 img7 img7 img8 img8"
-    "img5 img5 img6 img6 img7 img7 img8 img8"
-    ;
-   
-}
-
-.vert1{
-    grid-area: img1;
-    border-radius: 10px;
-}
-
-.vert2{
-    grid-area: img2;
-    border-radius: 10px;
-    
-}
-
-.vert3{
-    grid-area: img3;
-    border-radius: 10px;
-}
-
-.vert4{
-    grid-area: img4;
-    border-radius: 10px;
-}
-
-.vert5{
-    grid-area: img5;
-    border-radius: 10px;
-}
-
-.vert6{
-    grid-area: img6;
-    border-radius: 10px;
-}
-
-.vert7{
-    grid-area: img7;
-    border-radius: 10px;
-}
-
-.vert8{
-    grid-area: img8;
-    border-radius: 10px;
-}
-
-
-.portafolioContainer img{
-    width: 100%;
-    height: 180px;
-
-    
-}
-
-
-
-/* agenda  con responsive*/
-
-.home-agenda{
-    height: 100%;
-    width: 100%;
-    font-family: "Karantina", system-ui;
-    background-image: url("../assets/img/camilla.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
-  
-
-}
-
-.conten_form{
-    background-color: black;
-    align-content: center;
-    
-}
-
-
-.formulario{
-  flex-direction: column;  
-  display: flex;  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 70%; }
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+
+a {
+  text-decoration: none;
+  color: #919aa9; }
+
+.home-principal {
+  height: 800px;
+  font-family: "Karantina", system-ui;
+  background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #813535; }
+
+.home-titulo {
+  font-size: 150px;
+  text-align: left;
+  margin-left: 20px; }
+
+.home-subtitulo {
+  font-size: 120px;
+  text-align: left;
+  margin-left: 20px; }
+
+.home-texto {
+  color: white;
+  text-align: right;
+  font-size: 35px;
+  margin-right: 80px;
+  justify-items: center; }
+
+.h1-home-principal {
+  width: 100%; }
+
+.pie-pagina {
+  height: 150px;
+  background-color: #3d0000;
+  display: flex;
+  position: relative; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+
+.box {
+  color: #919aa9;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.box2 {
+  color: #919aa9;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.img-iconos {
+  width: 20px; }
+
+.h2Footer {
+  font-size: 20px; }
+
+.h2Correo {
+  font-size: 20px; }
+
+.h1-titulos {
+  font-family: "Karantina", system-ui;
+  color: #813535;
+  text-align: center;
+  font-size: 50px; }
+
+.main_tatuajes {
+  background-color: #b4afaf;
+  height: 800px;
+  width: 100%; }
+
+.container_tatuajes {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: linear-gradient(black, gray, #b4afaf); }
+
+.img_tatuajes {
+  width: 15%;
+  margin: 10px;
+  border-radius: 20px; }
+
+.h2_tattoo {
+  font-family: "Karantina", system-ui;
+  color: #813535;
+  text-align: center;
+  font-size: 60px; }
+
+.p_tattoo {
+  font-family: "Karantina", system-ui;
+  color: #813535;
+  text-align: center;
+  font-size: 30px; }
+
+.mainServicio {
+  background-color: black;
+  width: 100%;
+  height: 800px; }
+
+.h2_ilustraciones {
+  font-family: "Karantina", system-ui;
+  color: #813535;
+  text-align: center;
+  font-size: 60px; }
+
+.portafolioContainer {
+  display: grid;
   width: 50%;
-  padding: 30px; 
-  background-color: #813535; 
+  height: 90%;
+  margin: auto;
+  gap: 10px;
+  padding-top: 50px;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "img1 img1 img2 img2 img3 img3 img4 img4" "img1 img1 img2 img2 img3 img3 img4 img4" "img5 img5 img6 img6 img7 img7 img8 img8" "img5 img5 img6 img6 img7 img7 img8 img8"; }
+
+.vert1 {
+  grid-area: img1;
+  border-radius: 10px; }
+
+.vert2 {
+  grid-area: img2;
+  border-radius: 10px; }
+
+.vert3 {
+  grid-area: img3;
+  border-radius: 10px; }
+
+.vert4 {
+  grid-area: img4;
+  border-radius: 10px; }
+
+.vert5 {
+  grid-area: img5;
+  border-radius: 10px; }
+
+.vert6 {
+  grid-area: img6;
+  border-radius: 10px; }
+
+.vert7 {
+  grid-area: img7;
+  border-radius: 10px; }
+
+.vert8 {
+  grid-area: img8;
+  border-radius: 10px; }
+
+.portafolioContainer img {
+  width: 100%;
+  height: 180px; }
+
+.home-agenda {
+  height: 100%;
+  width: 100%;
+  font-family: "Karantina", system-ui;
+  background-image: url("../assets/img/camilla.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center; }
+
+.conten_form {
+  background-color: black;
+  align-content: center; }
+
+.formulario {
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  padding: 30px;
+  background-color: #813535;
   margin: auto;
   font-family: "Karantina", system-ui;
   font-size: 30px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 20px; }
 
- 
-}
-
-.form_casilla{
-  width: 90%;  
+.form_casilla {
+  width: 90%;
   padding: 10px;
   margin: 10px;
-  border-radius: 15px;
-   
-}
-@media (max-width: 425px){
-    h2{
-        font-size: 25px;
-        
-    }
-    p{
-        font-size: 20px;
-    }
-}
+  border-radius: 15px; }
 
-@media (max-width: 320px){
-    h2{
-        font-size: 20px;
-        
-    }
-    p{
-        font-size: 15px;
-    }
-}
+.home-contacto {
+  height: 100%;
+  width: 100%;
+  font-family: "Karantina", system-ui;
+  background-image: url("../assets/img/img-contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
+.box-contacto {
+  color: #813535;
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+  height: 300px; }
 
+.h2Contacto {
+  color: black;
+  font-size: 40px;
+  padding-top: 10px; }
 
-/* contacto con responsive */
+.img-iconos2 {
+  width: 20px;
+  padding-right: 10px; }
 
-.home-contacto{
-    height: 100%;
-    width: 100%;
-    font-family: "Karantina", system-ui;
-    background-image: url("../assets/img/img-contacto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+@media (max-width: 1024px) {
+  .navBar {
+    font-size: 13px; } }
 
-.box-contacto{
-    color:#813535;
+@media (max-width: 768px) {
+  .titulo-header {
+    font-weight: 300px;
+    font-size: 20px;
+    width: 20%; }
+  .navBar {
+    font-size: 10px;
+    width: 80%; } }
+
+@media (max-width: 425px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .titulo-header {
+    width: 1%;
+    font-size: 1px; } }
+
+@media (max-width: 320px) {
+  .titulo-header {
+    width: 1%;
+    font-size: 1px; }
+  .navBar {
+    width: 99%;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  .home-titulo {
+    font-size: 80px;
+    text-align: center; }
+  .home-subtitulo {
+    font-size: 80px;
+    text-align: center; }
+  .home-texto {
+    text-align: center; } }
+
+@media (max-width: 425px) {
+  .home-titulo {
+    font-size: 50px;
     text-align: center;
-    margin-top: 30px;
-    width: 100%;
-    height: 300px;
-}
+    margin-left: 20px; }
+  .home-subtitulo {
+    font-size: 50px;
+    text-align: center; }
+  .home-texto {
+    font-size: 30px;
+    text-align: center; } }
 
-.h2Contacto{
-    color: black;
-    font-size: 40px;
-    padding-top: 10px;
-}
+@media (max-width: 320px) {
+  .home-titulo {
+    text-align: center;
+    margin-left: none;
+    margin-right: 80px;
+    padding-top: 20px; }
+  .home-subtitulo {
+    text-align: center;
+    margin-right: 80px; } }
 
-.img-iconos2{
-    width: 20px;
-    padding-right: 10px;
-}
-  
+@media (max-width: 425px) {
+  .h2Correo {
+    font-size: 6px; }
+  .img-iconos {
+    width: 5px; }
+  .h2Footer {
+    font-size: 8px; } }
 
-@media (max-width: 768px){
-    .h2Contacto{
-        font-size: 35px;
-        padding-top: 20px;
-    }
-    
-}
-@media (max-width: 425px){
-    .h2Contacto{
-        font-size: 35px;
-        padding-top: 20px;
-    }
-    
-}
-@media (max-width: 375px){
-    .h2Contacto{
-        font-size: 30px;
-        padding-top: 20px;
-    }
-}
-@media (max-width: 320px){
-    .h2Contacto{
-        font-size: 20px;
-        padding-top: 20px;
-    }
-}
+@media (max-width: 320px) {
+  .h2Correo {
+    font-size: 5px; }
+  .img-iconos {
+    width: 4px; }
+  .h2Footer {
+    font-size: 6px;
+    padding-top: 6px; } }
+
+@media (max-width: 375px) {
+  .container_tatuajes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 425px) {
+  h2 {
+    font-size: 25px; }
+  p {
+    font-size: 20px; } }
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 20px; }
+  p {
+    font-size: 15px; } }
+
+@media (max-width: 768px) {
+  .h2Contacto {
+    font-size: 35px;
+    padding-top: 20px; } }
+
+@media (max-width: 425px) {
+  .h2Contacto {
+    font-size: 35px;
+    padding-top: 20px; } }
+
+@media (max-width: 375px) {
+  .h2Contacto {
+    font-size: 30px;
+    padding-top: 20px; } }
+
+@media (max-width: 320px) {
+  .h2Contacto {
+    font-size: 20px;
+    padding-top: 20px; } }

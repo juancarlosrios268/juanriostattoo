@@ -1,0 +1,181 @@
+@media (max-width: 1024px){
+    .navBar{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px){
+   .titulo-header{
+    font-weight: 300px;
+    font-size: 20px;
+    width: 20%;
+   }
+
+   .navBar{
+    font-size: 10px;
+    width: 80%;
+   }
+}
+
+@media (max-width: 425px){
+    .navBar{
+     display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    }
+    .titulo-header{
+            width: 1%;
+            font-size: 1px;
+        }
+
+}
+
+@media (max-width: 320px){
+    .titulo-header{
+        width: 1%;
+        font-size: 1px;
+    }
+    .navBar{
+        width:99%;
+        align-items:center;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .home-titulo{
+        font-size: 80px;
+        text-align:center ;
+    }
+    .home-subtitulo{
+        font-size: 80px;
+        text-align: center;
+    }
+    .home-texto{
+        text-align: center;
+    }
+}
+@media (max-width: 425px){
+    .home-titulo{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20px;
+    }
+    .home-subtitulo{
+        font-size: 50px;
+        text-align: center;
+    }
+    .home-texto{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media (max-width: 320px){
+    .home-titulo{
+        text-align: center;
+        margin-left: none;
+        margin-right: 80px;
+        padding-top: 20px;
+    }
+    .home-subtitulo{
+        text-align: center;
+        margin-right: 80px;
+    }   
+}
+
+
+
+
+@media (max-width: 425px){
+    .h2Correo{
+        font-size: 6px;
+    }
+    .img-iconos{
+      width: 5px;
+    }
+    .h2Footer{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 320px){
+    .h2Correo{
+        font-size: 5px;
+    }
+    .img-iconos{
+      width: 4px;
+    }
+    .h2Footer{
+        font-size: 6px;
+        padding-top: 6px;
+    }
+    
+}
+
+
+
+
+@media (max-width: 375px){
+    .container_tatuajes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media (max-width: 425px){
+    h2{
+        font-size: 25px;
+        
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px){
+    h2{
+        font-size: 20px;
+        
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .h2Contacto{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    
+}
+@media (max-width: 425px){
+    .h2Contacto{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    
+}
+@media (max-width: 375px){
+    .h2Contacto{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 320px){
+    .h2Contacto{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
