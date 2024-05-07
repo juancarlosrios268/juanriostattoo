@@ -4,7 +4,7 @@
     background-image: url("../assets/img/maxim-hopman-52Kf36w124Y-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #813535;
+    color:  map-get($colores, color2);;
     
 }
 

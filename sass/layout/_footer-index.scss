@@ -43,7 +43,6 @@
 
 .h1-titulos{
     font-family: "Karantina", system-ui;
-    color: #813535;
-    text-align: center;
+    color: map-get($colores, color2);
     font-size: 50px;
 }

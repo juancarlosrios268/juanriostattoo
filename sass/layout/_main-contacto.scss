@@ -1,5 +1,5 @@
 .home-contacto{
-    height: 100%;
+    height: 70vh;
     width: 100%;
     font-family: "Karantina", system-ui;
     background-image: url("../assets/img/img-contacto.jpg");
@@ -8,7 +8,7 @@
 }
 
 .box-contacto{
-    color:#813535;
+    color: map-get($colores, color2);
     text-align: center;
     margin-top: 30px;
     width: 100%;
@@ -16,9 +16,10 @@
 }
 
 .h2Contacto{
-    color: black;
+    color:  map-get($colores, color1);
     font-size: 40px;
     padding-top: 10px;
+    margin: 20px;
 }
 
 .img-iconos2{

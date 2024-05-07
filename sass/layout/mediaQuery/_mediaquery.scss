@@ -118,12 +118,32 @@
 
 
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     .container_tatuajes{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .h2_tattoo{
+        font-family: "Karantina", system-ui;
+        color: #813535;
+        text-align: center;
+        font-size: 50px;
+    
+    }
+    .p_tattoo{
+        font-family: "Karantina", system-ui;
+        color: #813535;
+        text-align: center;
+        font-size: 20px;
+    }
+    .img_tatuajes{
+        width: 20%;
+        margin: 10px;
+        border-radius: 20px;
+        
+    }
+    
 }
 
 
@@ -177,5 +197,27 @@
     .h2Contacto{
         font-size: 20px;
         padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 425px){
+    .h2_ilustraciones{
+        font-size: 40px;
+    }
+    .portafolioContainer img{
+        width: 80%;
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 425px){
+    .h2_ilustraciones{
+        font-size: 35px;
+    }
+    .portafolioContainer img{
+        width: 80%;
+        height: 160px;
     }
 }

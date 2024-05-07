@@ -27,7 +27,7 @@
 
 .h2_tattoo{
     font-family: "Karantina", system-ui;
-    color: #813535;
+    color:  map-get($colores, color2);
     text-align: center;
     font-size: 60px;
 
@@ -35,7 +35,7 @@
 
 .p_tattoo{
     font-family: "Karantina", system-ui;
-    color: #813535;
+    color:  map-get($colores, color2);
     text-align: center;
     font-size: 30px;
 
